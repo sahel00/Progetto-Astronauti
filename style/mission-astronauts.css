@@ -1,0 +1,179 @@
+/*
+************************
+*missions-astronauts.css
+************************
+*foglio di stile condiviso da astronauts e missions
+*
+*/ 
+ 
+
+/*MOBILE VERSION*/
+@media screen and (min-width: 320px) {
+    
+    /*
+    ***************
+    *sidebar
+    ***************
+    */
+
+    #sidebar {
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        background-color: rgb(65, 65, 65);
+        width: 100%;  
+        text-align: center;
+        background-size: 320px;
+        z-index: 1;
+        opacity: 0.9;
+    }
+
+    #sidebar a {
+        display: block;
+        float: left;
+        color: white;
+        line-height: 50px; /*height sidebar - 4px(margin bottom white)*/
+        font-size: 24px; /*deve essere in px, non deve cambiare se cambio font size body*/
+        font-weight: bold;
+    }
+
+    /*
+    ******************
+    *elementi generali
+    ******************
+    */
+
+    h2{
+        text-transform: uppercase;
+        background-color: rgb(218, 218, 218);
+        font-size: 2em;
+        height: 60px;
+        text-shadow: 2px 2px rgb(78, 78, 78);
+        line-height: 60px;
+        margin: 50px 0;
+    }
+
+    span{
+        display: block;
+    }
+
+    span:not(.title){
+        padding: 10px 0;
+    }
+
+    /*sezione deve essere indipendete da elementi flottanti*/
+    section{
+        clear: both;
+    }
+    
+
+    /*Per nascondere/visualizzare .allrest*/
+    .all-rest{
+        display: none;
+    }
+
+    .show{
+        display: block;
+    }
+
+    /*stile dei titoli*/
+    span.title{
+        padding: 10px ;
+        background-color: rgb(67, 114, 241);/*explore blue*/
+        font-size: 1.2em;
+        font-weight: bold;
+        color: white;
+    }
+
+    /*devo definire un margine inferiore per il footer a causa della sidebar fissa*/
+    footer{
+        margin-bottom: 50px; /*altezza sidebar*/
+    }
+  
+    /*
+    ***************
+    *immagine
+    ***************
+    */
+
+    .image-container{
+        position: relative;
+    }
+
+    div.image-container img{
+        display: block;
+        width: 100%;
+    }
+
+    /*nome*/
+    .image-container span:nth-of-type(1){
+        position: absolute;
+        font-size: 2.3em;
+        bottom: 0px;
+        left: 2px;
+        font-weight: bold;
+        color: white;
+    }
+
+
+    /*codice*/
+
+    .image-container span:nth-of-type(2){
+        
+        position: absolute;
+        top :8px;
+        right:0;
+        padding: 8px;
+        border:2px solid white;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        font-weight: bold;  
+        font-size: 1.3em;
+        color: white; 
+        background-color: rgb(255, 123, 0)/*dark orange*/;
+      
+    }
+}
+
+/*TABLET VERSION*/
+@media (min-width: 576px) {
+
+    /*visualizzo 2 missioni per riga larghe metà schermo*/
+    .main-container{
+        width: 50%;
+        float:left;
+    }
+
+}
+
+/*DESKTOP VERSION*/
+@media (min-width: 1024px) {
+
+    .main-container{
+        margin-bottom: 10px;        
+        border: 1px solid rgb(52, 70, 121);
+    }
+
+    .all-rest{
+        display: block;
+       
+    }
+
+}
+
+/*breakpoint per limitare dimensioni immagini e pagina in genearale, con centramento della section*/
+
+/*L-DESKTOP VERSION*/
+@media (min-width: 1440px) {
+
+
+    .main-container{
+        width: calc(100% / 3);
+        float:left;
+    }
+
+    section {
+        margin: 0 auto;
+        max-width: 1440px; /*masimo tre main-container per riga*/
+    }
+}

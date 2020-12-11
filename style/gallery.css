@@ -1,0 +1,99 @@
+/*
+***************
+*gallery.css
+*****************
+*/
+
+
+
+/*MOBILE VERSION*/
+@media screen and (min-width:320px){
+
+
+  /*****************
+  *elementi generali
+  *****************/
+
+  /*metto un margine per non far sovraporre con menu primario fisso*/
+  body {
+    margin-top: 60px; 
+  }
+  
+
+  section h2 {
+    margin: 10px auto;
+    width: 100%;
+    background-color: rgb(255, 123, 0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  #video{
+    margin-top: 60px;
+  }
+  
+  /*stile container immagine*/
+  div.gallery {
+    width:100%;
+    border: 1px solid #ccc;
+    float: left;
+  }
+    
+  div.gallery:hover {
+      border: 1px solid #777;
+  }
+    
+  div.gallery img, div.gallery iframe{
+    width: 100%;
+    height: auto;
+  }
+  
+  /*descrizione delle immagini*/
+  div.desc {
+    height: 70px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /*fixa altezza container che ha figli flottanti*/
+  .fix-float-bug {
+    clear: both;
+  }
+  
+}
+  
+/*TABLET VERSION*/
+@media (min-width: 576px) {
+
+  /*2  immagini per riga*/
+  div.gallery {
+    width: calc(100%/2);
+  }
+
+}
+
+/*DESKTOP VERSION*/
+@media (min-width: 1024px) {
+
+    /*3 immagini per riga*/
+    div.gallery {
+      width: calc(100% / 3);
+    }
+
+}
+
+/*breakpoint per limitare dimensioni immagini e pagina in genearale, con centramento della section*/
+
+/*L-DESKTOP VERSION*/
+@media (min-width: 1440px) {
+
+  /*4 immagini per riga*/
+  div.gallery {
+    width: calc(100% / 4);
+  }
+  
+  section {
+      margin: 0 auto;
+      max-width: 1440px; /*masimo tre main-container per riga*/
+  }
+}

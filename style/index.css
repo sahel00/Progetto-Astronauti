@@ -1,0 +1,235 @@
+/*
+***************
+*index.css
+*****************
+*/
+
+
+/*MOBILE VERSION*/
+@media screen and (min-width:320px){
+    
+    /*
+    *****************
+    gallery 
+    *****************
+    */
+
+    #gallery-container{
+        position: relative;
+        max-width: 1920px; /*largezza originale immagini*/
+        margin: 0 auto;
+
+    }
+
+    #gallery-container img{
+        display: block;
+        width:100%;
+        max-width: 1920px;/*larghezza originale*/
+        transition: src 2s linear;  
+    }
+
+    /*frase ad effetto*/
+    #gallery-container span {
+            position: absolute;/*rispetto a #gallery-container*/
+            bottom: 10%;
+            left:10%;
+            width:80%;
+            display: block;
+            font-size: 1em;
+            color: white;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding:10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    /*
+    *****************
+    news
+    *****************
+    */
+
+    #news-container{
+        position: relative;
+        margin: 0 auto; 
+        max-width: 1920px;/*uguale a larghezza originale delle immagini*/
+    }
+
+   #news-container article{
+    position: absolute;
+    height: 200px;
+    padding: 0 10px ;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    overflow-y: scroll;
+    }
+
+    #news-container article:nth-child(2)
+    {
+        left:100%;
+    }
+
+    #news-container article:nth-child(3){
+        left:200%;
+
+    }
+
+    #articles-container{
+        position: relative; /*per titolo h2*/
+        height: 200px;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+    }
+    
+
+    /*scroll news buttons*/
+    #scroll-left,
+    #scroll-right{
+        position: absolute;
+        top: -8px;
+        /*la freccia è semplicemente un carattere speciale(UTF-8)*/
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        cursor: grab;
+    }
+
+    #scroll-left{
+       left:0;
+    }
+
+    #scroll-right{
+        right: 0;
+    }
+
+
+    /*
+    *****************
+    about
+    *****************
+    */
+
+    #about-container{
+        width: 100%;
+        color:white;
+        text-align: center;
+    }
+
+    #about-container p{
+        font-size: 1.2em;
+    }
+
+    #about-container div:nth-child(1) h3{
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.5em;
+        
+    }
+
+    /*primo div-descrizione*/
+    #about-container > div:nth-child(1){
+       
+        background-color: black;
+        text-align: center;
+        border: 1px solid transparent; /*correzione bug errore rendering*/
+    }
+
+    #about-container > div:nth-child(1) div{
+        position: relative;
+    }
+
+    #about-container > div:nth-child(1) div p{
+        width: 100%;
+        text-transform: uppercase;
+        position: absolute;
+        
+        /*per centrare un absolute element */
+        left: 50%;
+        transform: translate(-50%, 0);
+        
+        bottom:0px;
+    
+        color: white;
+        text-shadow: 2px 2px rgb(0, 0, 0);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.1em;
+    }
+
+    #about-container > div:nth-child(1) img{
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    /*altri div*/
+    #about-container > div:nth-child(2),
+    #about-container > div:nth-child(3),
+    #about-container > div:nth-child(4) {
+        margin:10px;
+        color: black;
+        text-align: center;
+        width: 300px;
+        display: inline-block;
+        position: relative;
+        background: linear-gradient(transparent, rgb(241, 241, 241));
+        border-radius: 20px;
+        border-bottom: 4px solid gray;
+        padding: 0 6px;
+    }
+
+    
+    /*sizing delle immagini*/
+    #about-container > div:nth-of-type(2) img{
+        width: 170px;
+    }
+    #about-container > div:nth-of-type(3) img{
+        width: 140px;
+    }    
+    #about-container > div:nth-of-type(4) img{
+        width: 200px;
+    }
+}
+
+/*TABLET VERSION*/
+@media screen and (min-width:756px){
+
+
+    /*
+    *****************
+    about
+    *****************
+    */
+
+    /*aumento dimensioni dei testi dentro immagini*/
+    #about-container > div:nth-child(1) div p{
+        font-size: 2em;
+    }
+
+}
+
+/*DESKTOP VERSION*/
+@media screen and (min-width:1024px){
+
+
+    /*
+    *****************
+    about
+    *****************
+    */
+
+    /*aumento dimensioni dei testi dentro immagini*/
+    #about-container > div:nth-child(1) div p{
+        font-size: 2.5em;
+    }
+
+    /*si illumina bordo inferiore div*/
+    #about-container > div:nth-child(2):hover,
+    #about-container > div:nth-child(3):hover,
+    #about-container > div:nth-child(4):hover {
+        border-bottom: 4px solid rgb(67, 114, 241);;
+      
+    }
+
+
+
+}

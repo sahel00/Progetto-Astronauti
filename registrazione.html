@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>Join Us</title>
+    <meta name="description" content="Modulo di candidatura alle nostre missioni">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style/my-normalize.css">
+    <link rel="stylesheet" href="style/default.css">
+    <link rel="stylesheet" href="style/registration.css">
+
+    <!--Questa pagina usa elementi di HTML5 cerco di non rompere la pagina con uno SHIV-->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js%22%3E
+        </script>
+    <![endif]-->
+
+</head>
+<body>
+    
+    <header>
+        <!--Logo-->
+        <a href="index.html" title="Homepage"><h1>Explore</h1></a>
+
+       
+        <!--Toggle button-->
+        <div id="nav-toggle"></div>
+
+        <nav>
+
+            <!--nascosto in versione mobile, cliccando su toggle-button
+            acquisice un'altra classe (mobile) che lo rende visibile-->
+            <div id="nav-menu" class="hide">
+                <div>
+                    <a href="news.html" title="News">News</a>
+                </div>
+                <div>
+                    <a href="missions.html" title="News">Missioni</a>
+                    <div class="submenu">
+                        <a class="link" href="missions.html#" title="Missioni passate">Passate</a>
+                        <a class="link" href="missions.html#in-corso-ancora" title="Missioni in corso">In corso</a>
+                        <a class="link" href="missions.html#future-ancora" title="Missioni future">Future</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="astronauts.html" title="">Astronauti</a>
+                    <div class="submenu">
+                       <a class="link" href="astronauts.html#" title="Astronauti attivi">Attivi</a>
+                       <a class="link" href="astronauts.html#ritirati-ancora" title="Astronauti ritirati">Ritirati</a>
+                    </div>
+                </div>
+                <div>    
+                    <a href="gallery.html" title="Galleria immagini e video">Gallery</a>
+                    <div class="submenu">
+                        <a class="link" href="gallery.html#" title="Galleria immagini">Immagini</a>
+                        <a class="link" href="gallery.html#video-ancora" title="Galleria video">Video</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+   </header>
+    
+    <main>
+        <div class="container-registrazione">
+            <form name="form1" method="POST">
+                <div class="container-datiGenerale">
+                    <h2>Informazioni Generali:</h2>
+                        <label for="nome">Nome:</label>
+                        <!--onblur per visualizzare il place holder anche dopo aver cliccato una prima volta sull'input-->
+                        <input type="text" name="nome" id="nome" placeholder="Name" onfocus="this.placeholder=''"  onblur="this.placeholder = 'Name'" required>    
+
+                        <label for="cognome">Cognome:</label>
+                        <input type="text" name="cognome" id="cognome" placeholder="Nickname" onfocus="this.placeholder=''"  onblur="this.placeholder = 'Nickname'" required>
+
+                        <label for="eta">Eta:</label>
+                        <input type="number" name="eta" id="eta" placeholder="Age" onfocus="this.placeholder=''" min="1" max="60" onblur="this.placeholder = 'Age'" required>
+                        
+                        <div id="container-sesso">
+                            <label class="radio_l">Sesso:</label>
+
+                            <input type="radio" name="sesso" id="maschio" value="maschio">
+                            <label class="radio_l" for="maschio">Maschio</label>
+                            
+                            <input type="radio" name="sesso" id="femmina" value="femmina">
+                            <label for="femmina">Femmina</label>
+                        </div>
+
+
+                        <select name="capelli">
+                            <option value="0">Capelli:</option>
+                            <option value="euclid">Castani</option>
+                            <option value="europaClipper">Neri</option>
+                            <option value="europaLander">Biondi</option>
+                            <option value="inspire">Altro</option>
+                        </select>
+
+                        <select name="occhi">
+                            <option value="0">Occhi:</option>
+                            <option value="euclid">Marroni</option>
+                            <option value="europaClipper">Azzurri</option>
+                            <option value="europaLander">Verdi</option>
+                            <option value="inspire">Altro</option>
+                        </select>
+
+                        <label for="peso">Peso:</label>
+                        <input type="number" name="peso" id="peso" placeholder="Peso" onfocus="this.placeholder=''" min="65" max="100" onblur="this.placeholder = 'Peso'" required>
+                </div>
+
+                <div class="container-contatti">
+                    <h2>Dati Personali:</h2>
+
+                        <label for="tel">Numero Telefono:</label>
+                        <input type="text" name="tel" id="tel" placeholder="Telefono" onfocus="this.placeholder=''"  onblur="this.placeholder = 'Telefono'" required>    
+
+                        <label for="indirizzo">Indirizzo:</label>
+                        <input type="text" name="indirizzo" id="indirizzo" placeholder="Indirizzo" onfocus="this.placeholder=''"  onblur="this.placeholder = 'Indirizzo'" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Email@esempio.com" onfocus="this.placeholder=''"  onblur="this.placeholder = 'Email@esempio.com'" required>    
+
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="Password" onfocus="this.placeholder=''"  onblur="this.placeholder = 'Password'" required>
+                </div>
+
+                <div class="container-altro">
+                    <h2>Altro:</h2>
+
+                    <label for="descrizione">Descrizione:</label>
+                    <textarea id="descrizione" name="descrizione" cols="40" rows="9" placeholder="Description" onfocus="this.placeholder=''"  onblur="this.placeholder = 'Description'" maxlength=255 required></textarea>
+                    
+                    <label>Missioni Disponibili</label>
+                    <select name="mission">
+                        <option value="0">Missioni:</option>
+                        <option value="ulisse-2">Ulisse-2</option>
+                        <option value="selene-2">Selene-2</option>
+                        <option value="giove-6">Giove-6</option>
+                        <option value="rolomo-3">Romolo-3</option>
+                        <option value="selene-3">Selene-3</option>
+                        <option value="giove-7">Giove-7</option>
+                    </select>
+
+                    <input type="submit" name="registrazione" id="registrazione" value="Registrati">
+                </div>
+
+            </form>
+
+            <!--Corregge altezza container elementi flottanti-->
+            <div class="fix-float-bug"></div>
+        </div>
+    </main>
+
+    <footer>    
+        <div id="social">
+            <p><strong>Seguici sui social per rimanere aggiornato!</strong></p>
+            <a href="https://it-it.facebook.com/"><img src="img/icons/facebook-1024.png" alt="Seguici su facebook"></a>
+            <a href="https://www.instagram.com/?hl=it"><img src="img/icons/instagram.png" alt="Seguici su Instagram"></a>
+        </div>
+
+        <p>Molte delle immagini e delle icone presenti in questo progetto sono
+        soggette alla licenza Creative Commons 0, e sono pertanto aperte all'
+        utilizzo pubblico.<br>
+        Il logo per essere mostrato richiede che all' interno del sito sia
+        mostrato un testo di attribuzione che è possibile trovare proseguendo
+        nella lettura di questo footer. Il nostro utilizzo dei loghi di Facebook
+        ed Instagram è in ottemperanza con i regolamenti espressi dai rispettivi
+        possessori dei loghi</p>
+    </footer>
+    
+    <!--permette di visualizzare/nascondere menu in versione mobile/tablet-->
+    <script src="script/menu.js"></script>
+</body>
+</html>

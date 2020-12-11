@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <meta name="description" content="Galleria immagini e video">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="style/my-normalize.css">
+    <!--Foglio di stile comune a tutte le pagine-->
+    <link rel="stylesheet" href="style/default.css">
+    <!--Foglio di stile gallery.html-->
+    <link rel="stylesheet" href="style/gallery.css">
+
+</head>
+
+<body>
+
+  <header>
+    <!--Logo-->
+    <a href="index.html" title="Homepage"><h1>Explore</h1></a>
+
+   
+    <!--Toggle button-->
+    <div id="nav-toggle"></div>
+
+    <nav>
+
+        <!--nascosto in versione mobile, cliccando su toggle-button
+        acquisice un'altra classe (mobile) che lo rende visibile-->
+        <div id="nav-menu" class="hide">
+            <div>
+                <a href="news.html" title="News">News</a>
+            </div>
+            <div>
+                <a href="missions.html" title="News">Missioni</a>
+                <div class="submenu">
+                    <a class="link" href="missions.html#" title="Missioni passate">Passate</a>
+                    <a class="link" href="missions.html#in-corso-ancora" title="Missioni in corso">In corso</a>
+                    <a class="link" href="missions.html#future-ancora" title="Missioni future">Future</a>
+                </div>
+            </div>
+            <div>
+                <a href="astronauts.html" title="">Astronauti</a>
+                <div class="submenu">
+                   <a class="link" href="astronauts.html#" title="Astronauti attivi">Attivi</a>
+                   <a class="link" href="astronauts.html#ritirati-ancora" title="Astronauti ritirati">Ritirati</a>
+                </div>
+            </div>
+            <div>    
+                <a href="gallery.html" title="Galleria immagini e video">Gallery</a>
+                <div class="submenu">
+                    <a class="link" href="gallery.html#" title="Galleria immagini">Immagini</a>
+                    <a class="link" href="gallery.html#video-ancora" title="Galleria video">Video</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main> 
+    
+  <!--Immagini-->
+  
+  <section id=immagini>
+
+    <h2>Immagini</h2>
+    
+    <div class="gallery">
+      <a href="img/missions/mission1.jpg">
+         <img src="img/missions/mission1.jpg" alt="Nello spazio">
+        </a>
+        <div class="desc">Lavori di manutenzione nello spazio</div>
+    </div>
+      <div class="gallery">
+        <a href="img/missions/mission2.jpg">
+         <img src="img/missions/mission2.jpg" alt="Pannelli solari">
+        </a>
+    <div class="desc">Pannelli solari EX v0.2</div>
+      </div>
+      <div class="gallery">
+        <a href="img/missions/mission3.jpg">
+         <img src="img/missions/mission3.jpg" alt="Lancio">
+        </a>
+        <div class="desc">Il lancio dello Shuttle Markos-2</div>
+    </div>
+    <div class="gallery">
+        <a href="img/missions/mission4.jpg">
+         <img src="img/missions/mission4.jpg" alt="Vulcano">
+        </a>
+        <div class="desc">Vulcano E48, vista dall'alto</div>
+    </div>
+    <div class="gallery">
+        <a  href="img/missions/mission5.jpg">
+          <img src="img/missions/mission5.jpg" alt="AI">
+        </a>
+        <div class="desc">Intelligenza artificiale vs mente umana</div>
+    </div>
+    <div class="gallery">
+      <a  href="img/missions/mission6.jpg">
+        <img src="img/missions/mission6.jpg" alt="Lancio">
+      </a>
+      <div class="desc">Il lancio della missione Hubble</div>
+    </div>
+    <div class="gallery">
+      <a  href="img/missions/mission7.jpg">
+        <img src="img/missions/mission7.jpg" alt="Lancio">
+      </a>
+      <div class="desc">Mission Excalibur, partenza dalla terra</div>
+    </div>
+    <div class="gallery">
+      <a  href="img/missions/mission8.jpg">
+        <img src="img/missions/mission8.jpg" alt="Lancio">
+      </a>
+      <div class="desc">Il lancio dello Shuttle Euclid-1</div>
+    </div>
+    <div class="gallery">
+      <a  href="img/missions/mission9.jpg">
+        <img src="img/missions/mission9.jpg" alt="Lancio">
+      </a>
+      <div class="desc">NASA, missione Patrick 2.0</div>
+    </div>
+    <div class="gallery">
+      <a  href="img/missions/mission10.jpg">
+        <img src="img/missions/mission10.jpg" alt="Camera">
+      </a>
+      <div class="desc">Camera parabolica sulla Stazione Internazionale</div>
+    </div>
+    <div class="gallery">
+      <a  href="img/missions/mission11.jpg">
+        <img src="img/missions/mission11.jpg" alt="Los Angeles">
+      </a>
+      <div class="desc">Los Angeles, visione di notte</div>
+    </div>
+    <div class="gallery">
+      <a  href="img/missions/mission12.jpg">
+        <img src="img/missions/mission12.jpg" alt="Lancio">
+      </a>
+      <div class="desc">Razzo Messenger AT-AT</div>
+    </div>
+    <div class="gallery">
+      <a  href="img/missions/mission13.jpg">
+        <img src="img/missions/mission13.jpg" alt="Lontani orizonti">
+      </a>
+      <div class="desc">Lontani orizonti. Oceano di nuvole</div>
+    </div>
+    <div class="gallery">
+      <a  href="img/missions/mission14.jpg">
+        <img src="img/missions/mission14.jpg" alt="Shuttle">
+      </a>
+      <div class="desc">Shuttle Huble, arrivo alla stazione</div>
+    </div>
+    <div class="gallery">
+      <a href="img/missions/mission15.jpg">
+        <img src="img/missions/mission15.jpg" alt="Satellite">
+      </a>
+      <div class="desc">Il satellite artificiale Hotbird, vista dallo spazio</div>
+    </div>
+    <div class="gallery">
+      <a  href="img/missions/mission16.jpg">
+        <img src="img/missions/mission16.jpg" alt="Modello">
+      </a>
+      <div class="desc">Modello della stazione orbitale Clover-4</div>
+    </div>
+    <div class="gallery">
+      <a href="img/missions/mission17.jpg">
+        <img src="img/missions/mission17.jpg" alt="Astronauti">
+      </a>
+      <div class="desc">Gli astronauti durante una manutenzione esterna</div>
+    </div>
+    <div class="gallery">
+      <a href="img/missions/mission18.jpg">
+        <img src="img/missions/mission18.jpg" alt="Stazione orbitale">
+      </a>
+      <div class="desc">La Stazione Internazionalein in orbita</div>
+    </div>
+
+    <div class="gallery">
+      <a href="img/missions/mission19.jpg">
+        <img src="img/missions/mission19.jpg" alt="Ingegneria spaziale">
+      </a>
+      <div class="desc">Lavori di ingegneria spaziale</div>
+    </div>
+    
+    <div class="gallery">
+      <a href="img/missions/mission20.jpg">
+        <img src="img/missions/mission20.jpg" alt="Vista terra">
+      </a>
+      <div class="desc">Vista sulla Terra</div>
+    </div>
+    
+
+    <div class="fix-float-bug"></div><!--div to fix float bug, see in CSS how it works-->
+  </section><!-- fine immagini-->
+  
+
+  <!--Viddeo-->
+  <a name="video-ancora"></a>
+ 
+  <section id=video>
+    
+    <h2>Video</h2>
+
+    <div class="gallery">
+      <iframe src="https://www.youtube.com/embed/mMSzxmsXXwY" allowfullscreen></iframe>
+      <div class="desc">Live from Space: Video Inside the SpaceX's Dragon Endeavour</div>
+    </div>
+
+    <div class="gallery">
+      <iframe src="https://www.youtube.com/embed/22BXPLkyocw" allowfullscreen></iframe>
+      <div class="desc">Launch Recap: NASA and SpaceX fly Astronauts</div>
+    </div>
+
+    <div class="gallery">
+      <iframe src="https://www.youtube.com/embed/4VuXstRwMaA" allowfullscreen></iframe>
+      <div class="desc">How Are You Preparing to #LaunchAmerica?</div>
+    </div>
+
+    <div class="gallery">
+      <iframe src="https://www.youtube.com/embed/mQblbX9YccM" allowfullscreen></iframe>
+      <div class="desc">How to Make a Demo-2 Straw Rocket</div>
+    </div>
+
+    <div class="gallery">
+      <iframe src="https://www.youtube.com/embed/zFKND-X-0I8" allowfullscreen></iframe>
+      <div class="desc">Space Station Crew Returns Safely to Earth</div>
+    </div>
+
+    <div class="gallery">
+      <iframe src="https://www.youtube.com/embed/UU-wmSEPiqw" allowfullscreen></iframe>
+      <div class="desc">NASA’s View of Earth, in Music</div>
+    </div>
+
+    <div class="fix-float-bug"></div><!--div to fix float bug, see in CSS how it works-->
+
+  </section>
+
+
+
+</main>
+
+<footer>    
+  <div id="social">
+      <p><strong>Seguici sui social per rimanere aggiornato!</strong></p>
+      <a href="https://it-it.facebook.com/"><img src="img/icons/facebook-1024.png" alt="Seguici su facebook"></a>
+      <a href="https://www.instagram.com/?hl=it"><img src="img/icons/instagram.png" alt="Seguici su Instagram"></a>
+  </div>
+
+  <p>Molte delle immagini e delle icone presenti in questo progetto sono
+  soggette alla licenza Creative Commons 0, e sono pertanto aperte all'
+  utilizzo pubblico.<br>
+  Il logo per essere mostrato richiede che all' interno del sito sia
+  mostrato un testo di attribuzione che è possibile trovare proseguendo
+  nella lettura di questo footer. Il nostro utilizzo dei loghi di Facebook
+  ed Instagram è in ottemperanza con i regolamenti espressi dai rispettivi
+  possessori dei loghi</p>
+</footer>
+
+    <!--permette di visualizzare/nascondere menu in versione mobile/tablet-->
+    <script src="script/menu.js"></script>
+    
+</body>
+</html>

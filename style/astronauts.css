@@ -1,0 +1,84 @@
+/*
+***************
+*astronauts.css
+*****************
+*/
+
+/*MOBILE VERSION*/
+@media screen and (min-width: 320px) {
+    /*
+    ***************
+    *sidebar
+    ***************
+    */
+
+    #sidebar a {
+
+        width: calc(100% / 2);
+
+    }
+
+    /*
+    ***************
+    *elementi generali
+    ***************
+    */
+
+    /*span*/
+    .bio-container span:nth-child(2),
+    .info-container ul,
+    .missions-container ul{
+        padding: 10px;
+
+    }
+
+    /*
+    ***************
+    *Info e Missioni
+    ***************
+    */
+
+    .missions-container,
+    .info-container{
+        width: 50%;
+        height:140px;
+        float:left;
+        margin-bottom: 30px;/*spazio tra descrizione e immagine successiva*/
+    }
+
+    .missions-container,
+    .bio-container{
+        text-align: center;
+    }
+
+}
+
+/*
+***************
+*TABLET VERSION
+***************
+*/
+@media (min-width: 576px) {
+
+
+}
+
+/*DESKTOP VERSION*/
+@media (min-width: 1024px) {
+
+    .image-container{
+        width:50%;
+        float: left;
+    }
+
+    .bio-container{
+        height: 500px;
+        width:50%;
+        float: right;
+    }
+
+    .info-container{
+        clear: both;
+    }
+
+}

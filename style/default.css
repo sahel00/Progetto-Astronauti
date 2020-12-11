@@ -1,0 +1,319 @@
+/*
+************
+*gallery.css
+************
+*foglio di stile condiviso da tutte le pagine
+*
+*/
+
+/*MOBILE VERSION*/
+@media screen and (min-width:320px){
+
+    
+    /********************
+    *body
+    ********************/
+    body{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+        /*font-size più grande per mobile*/
+        font-size: 18px;
+    }
+
+
+    /********************
+    *header
+    ********************/
+    header{
+        top:0;
+        position: fixed;
+        width:100%;
+        height:50px;
+        background-color: rgb(67, 114, 241);/*explore blue*/
+        border-bottom:1px solid white;
+        z-index: 1;
+    }
+
+    #nav-toggle{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top:0;
+        right: 0;
+        background-image: url(../img/icons/toggle.png);
+        background-size: cover;
+        margin-top:4px;
+    }
+
+
+    /********************
+    *Elementi generali
+    ********************/
+    h1{
+        text-transform: uppercase;
+        position: absolute;
+        font-size: 2em;
+        padding:8px;
+        color: white;
+        left:0;
+        top:-4px;
+        z-index: 2;
+        border: 1px solid transparent;
+    }
+
+
+    h2{
+        background-color: rgb(67, 114, 241);/*explore blue*/
+        height: 40px;
+        color: white;
+        font-size: 1.6em;
+        padding: 4px;
+        margin: 0px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h3{
+        color: rgb(67, 114, 241);/*explore blue*/
+        
+    }
+
+    li{
+        list-style-type: none;
+    }
+
+    /*link*/
+    a:link{
+        color:rgb(67, 114, 241);/*explore blue*/
+    }
+    a:visited, a:hover, a:active{
+        color: red;
+    }
+
+    /*regola per fixare il float bug: quando ho un container con un elemento
+    flottante al suo interno, l'altezza di quest'ultimo non vieve conteggiata*/   
+    .fix-float-bug{
+        clear: both;
+    }
+
+    /********************
+    scrollbar
+    ********************/
+
+    ::-webkit-scrollbar{
+        width: 1%;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    
+    /********************
+    Menu di primo livello
+    ********************/
+            
+    /*menu primario nascosto di default*/
+    #nav-menu{
+        display: none;
+    }
+
+    /*menu primario con classe show (data col js) e' visibile*/
+    #nav-menu.show{
+        display: block;
+    }
+
+    /*Posizionamento mobile menu*/
+    div#nav-menu{
+       
+        /*In alto a destra per UX (click con mano destra)*/
+        position: fixed;
+        right:0;
+        top:50px;
+
+        width:320px;
+        
+        text-align: center;
+        /*per ottenere effetto sfocatura cambio la box sizing a content(quindi
+        i bordi non sono compresi nella width) e imposto un borso sinistro e
+        destro larghi come terzo breakpoint(desktop) e semi-trasparenti*/
+        box-sizing: content-box;
+        background-color: rgb(50, 50, 50,0.7);/*dark grey*/
+        border-left: 992px solid rgb(50, 50, 50,0.7);/*dark grey*/
+        border-bottom: 992px solid rgb(50, 50, 50,0.7);/*dark grey*/
+    }
+
+    #nav-menu div{
+        width:100%;
+        background-color: white;
+    }
+
+    #nav-menu div a{
+        display: block;
+        font-size: 30px;
+        background-color: rgb(67, 114, 241);/*explore blue*/
+        margin: 10px 0;
+        padding:8px;
+    }
+
+    /*stile dei sottomenu(es: attivi, ritirati)*/
+    #nav-menu div.submenu a{
+        background-color: transparent;
+        display: inline-block;
+        color:black;
+        font-size: 22px;
+        margin:6px;
+        padding:4px
+    }
+
+    #nav-menu a{
+        color: white;
+    }
+
+
+
+    
+    /********************
+    footer
+    ********************/
+
+    footer{
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        background-color: rgb(67, 114, 241);/*explore blue*/
+        clear: both;/*footer indipendente da elementi flottanti*/
+        border-top: 10px solid white;
+    }
+
+    footer img{
+        width:60px;
+        margin:10px;
+    }
+
+    footer #social{
+        color:white;
+        font-size: 1.1em;
+        min-width: 320px;
+        max-width: 400px;
+        margin: 0 auto;
+        border-bottom: 1px solid white;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    footer > p{
+        font-size: 0.8em;
+        clear: both;
+        padding: 20px 10px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+}
+
+
+/*TABLET VERSION*/
+@media (min-width: 576px) {
+
+    /*font-size più piccolo per tablet*/
+    body{
+        font-size: 17px;
+    }
+
+}
+
+
+/*DESKTOP VERSION*/
+@media screen and (min-width:1024px){
+
+    /*font-size ancora più piccolo per desktop*/
+    body{
+        font-size: 16px;
+    }
+    
+    /********************
+    Menu di primo livello
+    ********************/
+
+    div#nav-menu{
+        background-color: transparent;
+        display: block;/*lo rende sempre visibile anche se non lo era in versione mobile*/
+    }
+
+    /*stile del menu*/
+    #nav-menu > div{
+        background-color: transparent;
+        position: relative;
+        display: inline-block;
+        width:150px;
+        height: 50px;
+    }
+
+    /*liste del submenu una sotto l'altra*/
+    #nav-menu div.submenu a{
+        display: block;
+    }
+
+    /*Posizionamento*/
+    div#nav-menu{
+        position: fixed;
+        left:0;
+        top:0;
+
+        width:100%;
+        
+        /*riporto a border-box*/
+        box-sizing: border-box;
+        border:none;
+    }
+
+    #nav-menu a:not(.submenu){
+        background-color: transparent;
+        margin: 0;
+    }
+
+    /*nascondo e stilizzo il sottomenu*/
+    #nav-menu div.submenu{
+        display: none;
+
+        position: absolute;
+        top:46px;
+        left: 0px;
+        background-color: black;
+    }
+
+    #nav-menu div.submenu a{
+        color:white;
+    }
+    
+    /*rendo visibile sottomenu al passaggio mouse*/
+    #nav-menu div:hover div.submenu, /*mouse sopra voci principali*/
+    #nav-menu div.submenu:hover /*mouse sopra il submenu*/
+    {
+        display: block;
+    }
+
+
+    /*effetti al passaggio del mouse*/
+    #nav-menu div:hover div.submenu a:hover{
+        background-color: rgb(67, 114, 241);/*explore blue*/
+    }
+
+    #nav-menu div:hover div.submenu a:hover{
+        color:white;
+    }
+
+    #nav-menu div:hover,  h1:hover{
+        background-color: black;
+    }
+
+    /*nascondo il toggle button*/
+    #nav-toggle{
+        display: none;
+    }
+}

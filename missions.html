@@ -1,0 +1,953 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Missions</title>
+    <meta name="description" content="Missioni passate, in corso e future">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="style/my-normalize.css">
+    <!--Foglio di stile comune a tutte le pagine-->
+    <link rel="stylesheet" href="style/default.css">
+    <!--Foglio di stile comune a missioni e astronauti-->
+    <link rel="stylesheet" href="style/mission-astronauts.css">
+    <!--Foglio di stile index.html-->
+    <link rel="stylesheet" href="style/missions.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!--Logo-->
+        <a href="index.html" title="Homepage"><h1>Explore</h1></a>
+
+       
+        <!--Toggle button-->
+        <div id="nav-toggle"></div>
+
+        <nav>
+
+            <!--nascosto in versione mobile, cliccando su toggle-button
+            acquisice un'altra classe (mobile) che lo rende visibile-->
+            <div id="nav-menu" class="hide">
+                <div>
+                    <a href="news.html" title="News">News</a>
+                </div>
+                <div>
+                    <a href="missions.html" title="News">Missioni</a>
+                    <div class="submenu">
+                        <a class="link" href="missions.html#" title="Missioni passate">Passate</a>
+                        <a class="link" href="missions.html#in-corso-ancora" title="Missioni in corso">In corso</a>
+                        <a class="link" href="missions.html#future-ancora" title="Missioni future">Future</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="astronauts.html" title="">Astronauti</a>
+                    <div class="submenu">
+                       <a class="link" href="astronauts.html#" title="Astronauti attivi">Attivi</a>
+                       <a class="link" href="astronauts.html#ritirati-ancora" title="Astronauti ritirati">Ritirati</a>
+                    </div>
+                </div>
+                <div>    
+                    <a href="gallery.html" title="Galleria immagini e video">Gallery</a>
+                    <div class="submenu">
+                        <a class="link" href="gallery.html#" title="Galleria immagini">Immagini</a>
+                        <a class="link" href="gallery.html#video-ancora" title="Galleria video">Video</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+   </header>
+
+    <!--Menu navigazione di secondo livello-->
+    <aside id="sidebar">
+        <nav>
+            <a href="#" title="Past_missions">Passate</a>
+            <a href="missions.html#in-corso-ancora" title="Present_missions">In corso</a>
+            <a href="missions.html#future-ancora" title="Future_missions">Future</a>
+        </nav>
+    </aside>
+
+    <!--MISSIONI PASSATE-->
+
+    <section id="passate">
+        <h2>Passate</h2>
+        
+        <!--Mission1-->
+        <div class="main-container">
+        
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="1" src="img/missions/mission1.jpg" alt="Ulisse">
+                <span>Ulisse</span>
+                <span>#05235</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione marte">
+                    <span class="title">Destinazione</span>
+                    <span>Marte</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        <li>Lentino per Alieni</li>
+                        <li> Sensore per Luce Visibile/UV</li>
+                        <li> Spettrometro Ultravioletto</li>
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#1">Andrew Morgan</a></li>
+                        <li><a href="astronauts.html#5">Donald Pettit</a></li>
+                        <li><a href="astronauts.html#2">Chris Ferguson</a></li>
+                        <li><a href="astronauts.html#7">Jeanette Epps</a></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission1-->
+
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="2" src="img/missions/mission3.jpg" alt="Giove">
+                <span>Giove</span>
+                <span>#45669</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione giove">
+                    <span class="title">Destinazione</span>
+                    <span>Giove</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        <li>Sensore Ottico Avanzato</li>
+                        <li>Saldatrice ed Impalcatura Robotizzata</li>
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#6">Jasmin Moghbeli</a></li>
+                        
+                        <li><a href="astronauts.html#1">Andrew Morgan</a></li>
+                        <li><a href="astronauts.html#3">Christina Koch</a></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission3-->
+        <!--Mission2-->
+        <div class="main-container">
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="3" src="img/missions/mission2.jpg" alt="Selene">
+                <span>Selene</span>
+                <span>#95328</span>
+            </div> 
+
+            <div class="all-rest">
+            <!--destinazione-->
+                <div class = "destinazione luna">
+                    <span class="title">Destinazione</span>
+                    <span>Luna</span>
+                </div>
+            
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        <li>Bandiera degli USA </li>
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#3">Christina Koch</a></li>
+                        <li><a href="astronauts.html#1">Andrew Morgan</a></li>
+                        <li><a href="astronauts.html#4">Daniel Burbank</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fix-float-bug"></div><!--div per fixare il float left-->
+        </div><!--#mission2-->
+        <!--Mission3-->
+        
+        <!--Mission4-->
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="4" src="img/missions/mission4.jpg" alt="Colombo">
+                <span>Colombo</span>
+                <span>#05417</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione venere">
+                    <span class="title">Destinazione</span>
+                    <span>Venere</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        
+                        <li>Lente ad Alta Adattività Focale</li>
+                        <li>Cacciavite</li>
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#4">Daniel Burbank</a></li>
+                        <li><a href="astronauts.html#2">	Chris Ferguson</a></li>
+                        <li><a href="astronauts.html#6">	Jasmin Moghbeli</a></li>
+                        <li><a href="astronauts.html#11">	Loral O'Hara</a></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission4-->
+
+
+        <!--Mission5-->
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="5" src="img/missions/mission5.jpg" alt="Romolo">
+                <span>Romolo</span>
+                <span>#07896</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione luna">
+                    <span class="title">Destinazione</span>
+                    <span>Luna</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        
+                        <li>Trivella Automatizzata per 0G</li>
+                        <li>Manuale D'Istruzioni</li>
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#1">Andrew Morgan</a></li>
+                        <li><a href="astronauts.html#5">	Donald Pettit</a></li>
+                        <li><a href="astronauts.html#4">	Daniel Burbank</a></li>
+                        <li><a href="astronauts.html#12">	Mark Vandel Hei</a></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission5-->
+
+        <!--Mission6-->
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="6" src="img/missions/mission6.jpg"  alt="Giove-2">
+                <span>Giove-2</span>
+                <span>#04397</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione giove">
+                    <span class="title">Destinazione</span>
+                    <span>Giove</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        <li>Apparato Elettronico Resistente alle OE</li>
+                        
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#2">Chris Ferguson</a></li>
+                        <li><a href="astronauts.html#3">	Christina Koch</a></li>
+                        <li><a href="astronauts.html#6">	Jasmin Moghbeli</a></li>
+                        <li><a href="astronauts.html#7">	Jeanette Epps</a></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission6-->
+
+        <!--Mission7-->
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="7" src="img/missions/mission2.jpg" alt="Giove-3">
+                <span>Giove-3</span>
+                <span>#08157</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione giove">
+                    <span class="title">Destinazione</span>
+                    <span>Giove</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        <li>Giroscopio Laser</li>
+                        <li>Olio di Gomito</li>
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#5">Donald Pettit</a></li>
+                        <li><a href="astronauts.html#3">	Christina Koch</a></li>
+                        <li><a href="astronauts.html#10">	Jonathan Kim</a></li>
+                        <li><a href="astronauts.html#12">	Mark Vandel Hei</a></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission7-->
+    </section><!--#passate-->
+
+    <div class="fix-float-bug"></div>
+
+    <!--MISSIONI IN CORSO-->
+    <a name="in-corso-ancora"></a>
+    <section id="in-corso">
+        <h2>In corso</h2>
+        
+        <!--#mission8-->
+        <div class="main-container">
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="8" src="img/missions/mission8.jpg"  alt="Colombo-2">
+                <span>Colombo-2</span>
+                <span>#02879</span>
+            </div>  
+        
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione venere">
+                    <span class="title">Destinazione</span>
+                    <span>Venere</span>
+                </div>
+    
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        <li>Libro</li>
+                        <li>Antenna ad Alta Potenza</li>
+                        
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+            
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#16">Scott Kelly</a></li>
+                        <li><a href="astronauts.html#9">	Jessica Watkins</a></li>
+                        <li><a href="astronauts.html#11">	Loral O'Hara</a></li>
+                        <li><a href="astronauts.html#3">	Christina Koch</a></li>    
+                    </ul>
+                </div> 
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission8-->
+
+        <!--Mission9-->
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="9" src="img/missions/mission6.jpg" alt="Colombo-3">
+                <span>Colombo-3</span>
+                <span>#03675</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione venere">
+                    <span class="title">Destinazione</span>
+                    <span>Venere</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        
+                        <li>Telescopio dal Dispiegamento Complesso</li>
+                        
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#8">Jessica Meir</a></li>
+                        <li><a href="astronauts.html#9">	Jessica Watkins</a></li>
+                        <li><a href="astronauts.html#10">	Jonathan Kim</a></li>
+                        <li><a href="astronauts.html#11">	Loral O'Hara</a></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission9-->
+
+        <!--Mission10-->
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="10" src="img/missions/mission10.jpg" alt="Giove-4">
+                <span>Giove-4</span>
+                <span>#08752</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione giove">
+                    <span class="title">Destinazione</span>
+                    <span>Giove</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        
+                        <li>Bullone ad Alta Importanza</li>
+                        <li>Bibbia</li>
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#10">Jonathan Kim</a></li>
+                        <li><a href="astronauts.html#11">	Loral O'Hara</a></li>
+                        <li><a href="astronauts.html#12">	Mark Vandel Hei</a></li>
+                        <li><a href="astronauts.html#13">	Megan McArthur</a></li>    
+                    </ul>
+                </div>   
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission10-->
+
+        <!--Mission11-->
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="11" src="img/missions/mission11.jpg"  alt="Colombo-4">
+                <span>Colombo-4</span>
+                <span>#07645</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione venere">
+                    <span class="title">Destinazione</span>
+                    <span>Venere</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        
+                        <li>Stabilizzatore con Precisione Atomica</li>
+                        <li>Righello a Bolla</li>
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#12">Mark Vandel Hei</a></li>
+                        <li><a href="astronauts.html#13">	Megan McArthur</a></li>
+                        <li><a href="astronauts.html#14">	Michael Barratt</a></li>
+                        <li><a href="astronauts.html#15">	Nick Hague</a></li>    
+                    </ul>
+                </div>        
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission11-->
+
+        <!--Mission12-->
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="12" src="img/missions/mission12.jpg" alt="Colombo-5">
+                <span>Colombo-5</span>
+                <span>#01128</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione venere">
+                    <span class="title">Destinazione</span>
+                    <span>Venere</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        
+                        <li>Varie ed eventuali</li>
+                        <li>Steve</li>
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#14">Michael Barratt</a></li>
+                        <li><a href="astronauts.html#15">	Nick Hague</a></li>
+                        <li><a href="astronauts.html#16">	Scott Kelly</a></li>
+                        <li><a href="astronauts.html#17">	Stephanie Willson</a></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission12-->
+
+        <!--Mission13-->
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="13" src="img/missions/mission13.jpg"  alt="Giove-5">
+                <span>Giove-5</span>
+                <span>#07698</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione giove">
+                    <span class="title">Destinazione</span>
+                    <span>Giove</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        
+                        <li>Dispositivo per Mappatura Avanzata</li>
+                        
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#16">Scott Kelly</a></li>
+                        <li><a href="astronauts.html#17">	Stephanie Willson</a></li>
+                        <li><a href="astronauts.html#18">	Steven Nagel</a></li>
+                        <li><a href="astronauts.html#19">	Thomas Marshburn</a></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission13-->
+
+        <!--Mission14-->
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="14" src="img/missions/mission14.jpg"  alt="Romolo-2">
+                <span>Romolo-2</span>
+                <span>#05329</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione luna">
+                    <span class="title">Destinazione</span>
+                    <span>Luna</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        <li>Modulo Abitativo A</li>
+                        <li>Array di Comunicazione Principale</li>
+                        <li>Radar di Preallarme</li>
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#17">Stephanie Willson</a></li>
+                        <li><a href="astronauts.html#18">	Steven Nagel</a></li>
+                        <li><a href="astronauts.html#19">	Thomas Marshburn</a></li>
+                        <li><a href="astronauts.html#20">	Warren Hoburg</a></li>    
+                    </ul>
+                </div>        
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission14-->
+    </section><!--#in-corso-->
+
+    <div class="fix-float-bug"></div>
+
+    <!--MISSIONI FUTURE-->
+    <a name="future-ancora"></a>
+    <section id="future">
+    
+        <h2>Future</h2>
+        <!--Mission15-->
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="15" src="img/missions/mission15.jpg"  alt="Ulisse-2">
+                <span>Ulisse-2</span>
+                <span>#09179</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione marte">
+                    <span class="title">Destinazione</span>
+                    <span>Marte</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        <li>Cibo e acqua(26 mesi)</li>
+                        <li>Rover per Gravità Ridotte</li>
+                        
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#8">Jessica Meir</a></li>
+                        <li><a href="astronauts.html#10">	Jonathan Kim</a></li>
+                        <li><a href="astronauts.html#12">	Mark Vandel Hei</a></li>
+                        <li><a href="astronauts.html#14">	Michael Barratt</a></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission15-->
+
+        <!--Mission16-->
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="16" src="img/missions/mission16.jpg"  alt="Selene-2">
+                <span>Selene-2</span>
+                <span>#02676</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione luna">
+                    <span class="title">Destinazione</span>
+                    <span>Luna</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        
+                        <li>Bandiera USA Migliorata(più grande)</li>
+                        
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#9">Jessica Watkins</a></li>
+                        <li><a href="astronauts.html#11">	Loral O'Hara</a></li>
+                        <li><a href="astronauts.html#13">	Megan McArthur</a></li>
+                        <li><a href="astronauts.html#15">	Nick Hague</a></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission16-->
+       
+        <!--Mission17-->
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="17" src="img/missions/mission17.jpg"  alt="Giove-6">
+                <span>Giove-6</span>
+                <span>#05233</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione giove">
+                    <span class="title">Destinazione</span>
+                    <span>Giove</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        <li>Modulo di Fuga di Emergenza</li>
+                        <li>Equipaggiamento da Saldatura ed Assemblaggio</li>
+                        
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#20">   Warren Hoburg</a></li>
+                        <li><a href="astronauts.html#18">	Steven Nagel</a></li>
+                        <li><a href="astronauts.html#16">	Scott Kelly</a></li>
+                        <li><a href="astronauts.html#14">	Michael Barratt</a></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission17-->
+
+        <!--Mission18-->
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="18" src="img/missions/mission18.jpg"  alt="Romolo-3">
+                <span>Romolo-3</span>
+                <span>#07432</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione luna">
+                    <span class="title">Destinazione</span>
+                    <span>Luna</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        
+                        <li>Cemento, Quantità Industriali di</li>
+                        
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Crew</span>
+                    <ul> 
+                        <li><a href="astronauts.html#19">Thomas Marshburn</a></li>
+                        <li><a href="astronauts.html#17">	Stephanie Willson</a></li>
+                        <li><a href="astronauts.html#15">	Nick Hague</a></li>
+                        <li><a href="astronauts.html#13">	Megan McArthur</a></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission18-->
+
+        <!--Mission19-->
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="19" src="img/missions/mission19.jpg" alt="Selene-3">
+                <span>Selene-3</span>
+                <span>#03854</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione luna">
+                    <span class="title">Destinazione</span>
+                    <span>Luna</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        
+                        <li>Bandiera USA Migliorata(ancora più grande)</li>
+                        
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#11">Loral O'Hara</a></li>
+                        <li><a href="astronauts.html#13">	Megan McArthur</a></li>
+                        <li><a href="astronauts.html#8">	Jessica Meir</a></li>
+                        <li><a href="astronauts.html#9">	Jessica Watkins</a></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission19-->
+
+        <!--Mission20-->
+        <div class="main-container">
+                
+            <!--image name and code-->
+            <div class="image-container">
+                <img class="mission-image" id="20" src="img/missions/mission20.jpg"  alt="Giove-7">
+                <span>Giove-7</span>
+                <span>#06466</span>
+            </div>  
+            
+            <div class="all-rest">
+                <!--destinazione-->
+                <div class = "destinazione giove">
+                    <span class="title">Destinazione</span>
+                    <span>Giove</span>
+                </div>
+        
+                <!--equipaggiamento-->
+                <div class="equipaggiamento-container">
+                    <span class="title">Equipaggiamento</span>
+                    <ul> 
+                        
+                        <li>Interferometro Laser</li>
+                        <li>LIDAR</li>
+                        <li>Cibo(4 giorni)</li>
+                        <!--source https://www.nasa.gov/mission_pages/newhorizons/spacecraft/index.html-->
+                    </ul>
+                </div>
+                
+                <!--crew-->
+                <div class="crew-container">
+                    <span class="title">Equipaggio</span>
+                    <ul> 
+                        <li><a href="astronauts.html#10">Jonathan Kim</a></li>
+                        <li><a href="astronauts.html#15">	Nick Hague</a></li>
+                        <li><a href="astronauts.html#18">	Steven Nagel</a></li>
+                        <li><a href="astronauts.html#19">	Thomas Marshburn</a></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="fix-float-bug"></div><!--div tper fixare il float left-->
+        </div><!--#mission20-->
+    </section><!--#future-->
+
+    <footer>    
+        <div id="social">
+            <p><strong>Seguici sui social per rimanere aggiornato!</strong></p>
+            <a href="https://it-it.facebook.com/"><img src="img/icons/facebook-1024.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/?hl=it"><img src="img/icons/instagram.png" alt="instagram"></a>
+        </div>
+
+        <p>Molte delle immagini e delle icone presenti in questo progetto sono
+        soggette alla licenza Creative Commons 0, e sono pertanto aperte all'
+        utilizzo pubblico.<br>
+        Il logo per essere mostrato richiede che all' interno del sito sia
+        mostrato un testo di attribuzione che è possibile trovare proseguendo
+        nella lettura di questo footer. Il nostro utilizzo dei loghi di Facebook
+        ed Instagram è in ottemperanza con i regolamenti espressi dai rispettivi
+        possessori dei loghi</p>
+    </footer>
+
+    <!--Script che consente di visualizzare/nascondere all rest quando si clicca sul toggle button-->
+    <script src="script/show-hide.js"></script>
+    
+    <!--permette di visualizzare/nascondere menu in versione mobile/tablet-->
+    <script src="script/menu.js"></script>
+</body>
+
+</html>

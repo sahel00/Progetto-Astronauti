@@ -1,0 +1,161 @@
+/*
+***************
+*registration.css
+*****************
+*/
+
+/*MOBILE VERSION*/
+ @media screen and (min-width:320px){
+
+    /*
+    ***************
+    *elementi generali
+    *****************
+    */
+
+
+    label{
+        display: block;
+        color: black;
+        font-size: 1.1em;
+        margin-top: 50px;
+    }
+    
+    input{
+        margin: 0 auto;
+        background: white;
+        display: block;
+        border: 1px solid rgb(67, 114, 241);
+        width: 70%;
+        height: 40px;
+        margin-top: 5px;
+        color: rgb(67, 114, 241);        
+    }
+
+    /*
+    ***************
+    *container
+    *****************
+    */
+
+    
+    .container-registrazione{
+        margin-top: 70px;
+        background: rgba(235, 233, 233, 0.74);
+    }
+    
+    .container-datiGenerale, .container-contatti, .container-altro {
+        max-width: 500px;
+        margin: 5px auto;
+        padding: 20px;
+    }
+
+    .radio_l{
+        float: left;
+    }
+    
+    #container-sesso{
+        width:250px;
+        margin: 0 auto;
+        border: 1px solid transparent;
+    }
+
+    /*
+    ***************
+    *input
+    *****************
+    */
+    
+    input:focus{
+        outline: none;
+        border-color: rgb(67, 114, 241);
+    }
+    
+    input[name="sesso"]{
+        margin-top: 45px;
+        float: left;
+        width: 30px;
+        height: 20px;
+    }
+
+    textarea{
+        display: block;
+        background: white;
+        margin: 0 auto;
+        border: 1px solid rgb(67, 114, 241);
+        width: 70%;
+        border-radius: 10px;
+        height: 200px;
+        margin-top: 10px;
+        color: rgb(67, 114, 241);
+        line-height: 30px;     
+    }
+    
+    select{
+        display: block;
+        background: rgb(67, 114, 241);
+        margin: 0 auto;
+        color: white;
+        margin-top: 30px;
+        width: 50%;
+        height: 50px;
+        font-size: 1em;
+        outline: none;
+    }
+    
+    ::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(67, 114, 241);
+        text-align: center;
+    }
+    
+    ::-ms-input-placeholder{ /* Microsoft Edge */
+        color: rgb(67, 114, 241);
+        text-align: center;
+    }
+    
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: rgb(67, 114, 241);
+        text-align: center;
+    }
+    
+
+    /*bottone ragistrazione*/
+    #registrazione{
+        margin-top: 30px;
+        background:	orange;
+        width: 40%;
+        height: 50px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+    }
+}
+
+/*MOBILE VERSION*/
+@media screen and (min-width:576px){
+
+}
+
+/*DESKTOP VERSION*/
+@media screen and (min-width:1024px) {
+    .container-datiGenerale, .container-contatti, .container-altro{
+        width: calc(100%/3);
+        float: left;
+        margin: 0 auto;
+        max-width: 1500px;
+    }
+
+    .fix-float-bug
+    {
+        clear: both;
+    }
+}
+
+/*L-DESKTOP VERSION*/
+@media (min-width: 1440px) {
+
+    main {
+        margin: 0 auto;
+        max-width: 1440px; /*masimo tre main-container per riga*/
+    }
+}

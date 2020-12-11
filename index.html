@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>exploreSpace</title>
+    <meta name="description" content="Agenzia aerospaziale italiana leader nelle tecnologie e missioni spaziali">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="style/my-normalize.css">
+    <!--Foglio di stile comune a tutte le pagine-->
+    <link rel="stylesheet" href="style/default.css">
+    <!--Foglio di stile index.html-->
+    <link rel="stylesheet" href="style/index.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!--Logo-->
+        <a href="index.html" title="Homepage"><h1>Explore</h1></a>
+
+       
+        <!--Toggle button-->
+        <div id="nav-toggle"></div>
+
+        <nav>
+
+            <!--nascosto in versione mobile, cliccando su toggle-button
+            acquisice un'altra classe (mobile) che lo rende visibile-->
+            <div id="nav-menu" class="hide">
+                <div>
+                    <a href="news.html" title="News">News</a>
+                </div>
+                <div>
+                    <a href="missions.html" title="News">Missioni</a>
+                    <div class="submenu">
+                        <a class="link" href="missions.html#" title="Missioni passate">Passate</a>
+                        <a class="link" href="missions.html#in-corso-ancora" title="Missioni in corso">In corso</a>
+                        <a class="link" href="missions.html#future-ancora" title="Missioni future">Future</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="astronauts.html" title="">Astronauti</a>
+                    <div class="submenu">
+                       <a class="link" href="astronauts.html#" title="Astronauti attivi">Attivi</a>
+                       <a class="link" href="astronauts.html#ritirati-ancora" title="Astronauti ritirati">Ritirati</a>
+                    </div>
+                </div>
+                <div>    
+                    <a href="gallery.html" title="Galleria immagini e video">Gallery</a>
+                    <div class="submenu">
+                        <a class="link" href="gallery.html#" title="Galleria immagini">Immagini</a>
+                        <a class="link" href="gallery.html#video-ancora" title="Galleria video">Video</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+   </header>
+    
+    <main>
+
+
+        <!--preview gallery-->
+        <div id="gallery-container">
+            <span>Don't give space to the imagination</span>
+            <img id="image" src="img/missions/mission1.jpg" alt="Preview delle missioni">
+        </div>
+        
+        <!--news--->
+        <div id="news-container">
+           
+            <a title="News"><h2>News</h2></a>
+                    
+            <!--scroll buttons-->
+            <span id="scroll-left">◀</span>
+            <span id="scroll-right">▶</span>
+    
+            <!--preview delle news-->
+            <div id = "articles-container">
+                <article>
+                    <a href="news.html#news1" title="news1"><h3 class="titolo">SpaceX e l'Agenzia russa Roscosmos</h3></a>
+                    
+                    <p>Dopo il successo di SpaceX, che il 31 maggio ha fatto
+                    arrivare con la sua Dragon due astronauti sulla Stazione
+                    spaziale internazionale, i commenti dalla Russia non si sono
+                    fatti attendere.
+                    </p>
+
+                </article>
+
+                <article>
+                    <a href="news.html#news2" title="News2"><h3 class="titolo">La velocità di fuga di Titano, luna di Saturno</h3></a>
+                    
+                    <p>È ancora Cassini, la missione congiunta dell'Agenzia spaziale europea e della NASA, 
+                        a far parlare di sé, nonostante sia terminata nel 2017: ma ha studiato Saturno, i suoi anelli 
+                        e alcuni dei suoi satelliti per ben 13 anni, prima che si decidesse di porre fine all'esplorazione 
+                        con uno storico Gran Finale, giù, attraverso l'atmosfera del Pianeta con gli Anelli. 
+                        la vita così come la conosciamo.
+                    </p>
+                </article>
+
+                <article>
+                    <a href="news.html#news3" title="News3"><h3 class="titolo">Energia wireless per i rover del futuro</h3></a>
+                    
+                    <p>Il Sole giocherà un ruolo fondamentale nel futuro dell'esplorazione spaziale. 
+                        I rover che le agenzie spaziali si preparano a far sbarcare su Marte e sulla Luna saranno 
+                        infatti alimentati tramite pannelli fotovoltaici dall'energia della nostra stella. 
+                    </p>
+                </article>
+
+            </div><!--#articles-container-->
+        </div><!--#news-->
+        
+        <!--about-->
+        <div id="about-container">
+            
+            <!--storia-->
+            <div>
+                <h3>About Us</h3>
+                
+                <p> <strong>Explore</strong> è l'agenzia
+                    governativa civile italiana responsabile delle missioni spaziali
+                    e della ricerca aerospaziale.<br>E' stata stata istituita a
+                    Torino nel 1993 dal presidente della Repubblica italiana <a
+                    href="https://it.wikipedia.org/wiki/Oscar_Luigi_Scalfaro">Luigi
+                    Scalfaro</a>
+                </p>
+            
+                <div>
+                    <p>Ha scoperto l'esistenza di vita aliena nello spazio durante la
+                        missione <a href="missions.html#ulisse">Ulisse</a>
+                    </p>
+                        <img src="img/miscellaneous/alien.jpg" alt="Vita aliena nello spazio">
+                </div>
+                
+                <div>
+                   <p> E'collocata sotto la Mole Antonelliana a 2km di profondità</p>
+                    <img src="img/miscellaneous/mole.jpg" alt="Mole Antonelliana a Torino">
+                </div>
+                            
+            </div><!--#storia-->
+            
+           <!--missioni-->
+            <div>
+                <a href="missions.html" title="Missioni">
+                    <img src="img/icons/rocketship.png" alt="Missile spaziale">
+                    <h3>Missioni</h3>
+                </a>
+                <p>Non lasciare spazio all'immaginazione</p>
+            </div>
+
+            <!--astronauti-->
+            <div>
+                <a href="astronauts.html" title="Astronauti">
+                    <img src="img/icons/helmet.png" alt="Almetto astronauta">
+                    <h3>Astronauti</h3>
+                </a>
+                <p>Vieni a conoscere i nostri eroi</p>
+            </div>
+
+            <!--join us-->
+            <div>
+                <a href="registrazione.html" title="Candidati">
+                    <img src="img/icons/space-suit.png" alt="Astronauta che saluta">
+                    <h3>Join Us</h3>
+                </a>
+                <p>Il destino del mondo è nelle tue mani</p>
+            </div>
+
+            <!--div vuoto per fixare altezza container-->
+            <div id ="fix-float-height"></div>
+
+        </div><!--#about-->
+
+    </main>
+    
+    <footer>    
+        <div id="social">
+            <p><strong>Seguici sui social per rimanere aggiornato!</strong></p>
+            <a href="https://it-it.facebook.com/"><img src="img/icons/facebook-1024.png" alt="Seguici su facebook"></a>
+            <a href="https://www.instagram.com/?hl=it"><img src="img/icons/instagram.png" alt="Seguici su Instagram"></a>
+        </div>
+
+        <p>Molte delle immagini e delle icone presenti in questo progetto sono
+        soggette alla licenza Creative Commons 0, e sono pertanto aperte all'
+        utilizzo pubblico.<br>
+        Il logo per essere mostrato richiede che all' interno del sito sia
+        mostrato un testo di attribuzione che è possibile trovare proseguendo
+        nella lettura di questo footer. Il nostro utilizzo dei loghi di Facebook
+        ed Instagram è in ottemperanza con i regolamenti espressi dai rispettivi
+        possessori dei loghi</p>
+    </footer>
+    
+    
+    <!--
+        script1: aggiorna immagine della gallery ogni 5 secondi
+        script2: sposta la scroll orizzontale di news-container quando si preme la freccia
+    -->
+    <script src="script/index.js"></script>
+    <!--permette di visualizzare/nascondere menu in versione mobile/tablet-->
+    <script src="script/menu.js"></script>
+</body>
+
+</html>
